@@ -76,6 +76,22 @@ header nav ul li a:hover {
   opacity: 0.7;
 }
 
+@media (max-width: 768px) {
+  header nav ul {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: red;
+  }
+  header nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    width: 90%;
+  }
+}
+
 header button {
   background: #f25f3a;
   color: #ffffff;
@@ -96,6 +112,25 @@ header button:hover {
   opacity: 0.7;
 }
 
+@media (max-width: 768px) {
+  header button {
+    display: none;
+  }
+}
+
+header .fa-bars {
+  display: none;
+  font-size: 22px;
+  color: #242d52;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header .fa-bars {
+    display: block;
+  }
+}
+
 main {
   width: 75%;
   margin: auto;
@@ -109,11 +144,25 @@ main section.section1 {
   padding: 60px 0px;
 }
 
+@media (max-width: 768px) {
+  main section.section1 {
+    text-align: center;
+  }
+}
+
 main section.section1 h1 {
   font-size: 55px;
   max-width: 50%;
   color: #242d52;
   line-height: 60px;
+}
+
+@media (max-width: 768px) {
+  main section.section1 h1 {
+    max-width: 100%;
+    font-size: 45px;
+    text-align: center;
+  }
 }
 
 main section.section1 p {
@@ -122,6 +171,14 @@ main section.section1 p {
   font-weight: 500;
   color: #9095a7;
   line-height: 30px;
+}
+
+@media (max-width: 768px) {
+  main section.section1 p {
+    max-width: 80%;
+    text-align: center;
+    margin: 20px auto;
+  }
 }
 
 main section.section1 button {
@@ -143,5 +200,11 @@ main section.section1 button {
 
 main section.section1 button:hover {
   opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  main section.section1 button {
+    margin: 20px auto;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

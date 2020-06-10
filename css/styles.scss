@@ -61,6 +61,20 @@ header {
                 }
             }
         }
+        @media (max-width: 768px) {
+            ul {
+                display: none;
+                flex-direction: column;
+                background: red;
+                li {
+                    a {
+                        display: block;
+                        padding: 10px 20px;
+                        width: 90%;
+                    }
+                }
+            }
+        }
     }
     button {
         background: #f25f3a;
@@ -77,6 +91,18 @@ header {
         &:hover {
             opacity: 0.7;
         }
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+    .fa-bars {
+        display: none;
+        font-size: 22px;
+        color: #242d52;
+        cursor: pointer;
+        @media (max-width: 768px) {
+            display: block;
+        }
     }
 }
 
@@ -89,11 +115,19 @@ main {
         background-repeat: no-repeat;
         background-position: right;
         padding: 60px 0px;
+        @media (max-width: 768px) {
+            text-align: center;
+        }
         h1 {
             font-size: 55px;
             max-width: 50%;
             color: #242d52;
             line-height: 60px;
+            @media (max-width: 768px) {
+                max-width: 100%;
+                font-size: 45px;
+                text-align: center;
+            }
         }
         p {
             max-width: 30%;
@@ -101,6 +135,11 @@ main {
             font-weight: 500;
             color: #9095a7;
             line-height: 30px;
+            @media (max-width: 768px) {
+                max-width: 80%;
+                text-align: center;
+                margin: 20px auto;
+            }
         }
         button {
             background: #f25f3a;
@@ -117,6 +156,9 @@ main {
             margin-top: 20px;
             &:hover {
                 opacity: 0.7;
+            }
+            @media (max-width: 768px) {
+                margin: 20px auto;
             }
         }
     }
